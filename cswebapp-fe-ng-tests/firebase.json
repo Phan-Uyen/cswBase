@@ -1,0 +1,21 @@
+{
+    "hosting": {
+        "public": "allure-report",
+        "headers": [{
+            "source": "/build/app/**",
+            "headers": [{
+                "key": "Cache-Control",
+                "value": "public, max-age=0"
+            }]
+        }],
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [{
+            "source": "**",
+            "destination": "/index.html"
+        }]
+    }
+}

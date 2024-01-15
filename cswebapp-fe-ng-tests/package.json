@@ -1,0 +1,32 @@
+{
+    "name": "test-corescan",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "installBrowser": "npx playwright install",
+        "e2e": "npx playwright test --grep-invert \"@incomplete|@unstable\"",
+        "sendEmail": "npx ts-node tests/hook/emailNode.ts",
+        "report:allure": "npx allure",
+        "generator:allure": "yarn report:allure generate ./report -o allure-report --clean",
+        "report:open": "allure open allure-report",
+        "firebase:deploy": "firebase deploy --token 1//0gp94tScWkUdQCgYIARAAGBASNwF-L9Ir4sU9lnF6RVbJIyM9A9gYjJNL3bD0HP1zOJu_h7SPE-xPfiT5CbZHNIg4eQ7Bh4325D8",
+        "test:clean": "npx ts-node tests/hook/removeFile.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.30.0",
+        "@types/nodemailer-express-handlebars": "^4.0.2",
+        "allure-commandline": "^2.20.1",
+        "allure-playwright": "^2.0.0-beta.26",
+        "nodemailer": "^6.9.1",
+        "nodemailer-express-handlebars": "^6.0.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.5"
+    },
+    "dependencies": {
+        "dotenv": "^16.3.1"
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "cookies": [
+    {
+      "name": "JSESSIONID",
+      "value": "71E3A958FE12AADC10769E2FED840213",
+      "domain": "dev-enouvo-aws.coreshed.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://dev-react-aws.coreshed.com",
+      "localStorage": [
+        {
+          "name": "JSESSIONID",
+          "value": "true"
+        },
+        {
+          "name": "i18nextLng",
+          "value": "en"
+        }
+      ]
+    }
+  ]
+}
